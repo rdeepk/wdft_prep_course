@@ -3,18 +3,12 @@
 The fizz buzz challenge: Fizz buzz is a common entry level challenge that interviewers use to quickly guage someone's program background. Print the numbers from 1 to 100 to the console, however for every number that is a multiple of 5 print the word fizz, for every number that is a multiple of 3 print buzz. If a number is both a multiple of 5 and 3 (like 15) print the word fizzbuzz. Hint: use if/else statements. */
 
 for(var i=1;i<=100;i++) {
-    if (i%3 == 0) {
-        if(i%5 == 0) {
+    if ((i%3 == 0) && (i%5 == 0)) {
             console.log("fizzbuzz");
-        } else {
+    } else if(i%3 == 0) {
             console.log("buzz");
-        }
     } else if(i%5 == 0) {
-        if(i%3 == 0) {
-            console.log("fizzbuzz");
-        } else {
-            console.log("fizz");
-        }
+        console.log("fizz");
     } else {
         console.log(i);
     }
@@ -38,8 +32,17 @@ Passing this string to console.log should show something like this:
  # # # # 
  
  */
-
- for(i=1;i<=8;i++) {
-     start = '#';
-
+var odd = '# ';
+var even = " #";
+var size = 8;
+ for(i=1;i<=size;i++) {
+     var str = "";
+     for(j=1;j<=size/2;j++) {
+         if(i%2 == 0){
+            str += even;
+         } else {
+            str += odd;
+         }        
+     }
+     console.log(str);
  }
