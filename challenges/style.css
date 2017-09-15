@@ -26,3 +26,58 @@ h1 {
     width: 200px;
     border: 10px solid #d3d3d3;
 }
+
+/*=========================   CSS Challenge    ===========================*/
+
+.row1 div, .row2 div, .row3 div {
+    width: 150px;
+    height: 150px;
+    background: red;
+}
+.row1 {
+    font-size: 0;
+}
+.a1 {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+.a2 {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+.a3 {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+.b1 {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.b2 {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.b3 {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.row3 {
+    clear: both;
+    position: relative;
+}
+
+.c1 {
+    margin: 0 20px 20px 0;
+}
+.c2 {
+    position: absolute;
+    top: 0;
+    left: 170px;
+}
+.c3 {
+    position: absolute;
+    top: 0;
+    left: 340px;
+}
